@@ -1,0 +1,152 @@
+@import vars
+@import mixins
+
+html
+  font-size: 100%
+
+
+// Medium screens (640px)
+@media (min-width: 40rem)
+  html
+    font-size: 112%
+
+
+// Large screens (1024px)
+@media (min-width: 64rem)
+  html
+    font-size: 120%
+
+*, *:before, *:after
+  +box-sizing()
+
+body 
+  background: url("../images/background.jpg")
+
+
+
+#logo
+  width: 75%
+  margin-left: .6rem
+
+.houston
+  color: #ffffff
+  font-size: 1rem
+  text-align: right
+  padding: 0
+  margin: 0
+  margin-top: 2.5rem
+  margin-right: 80px
+
+.number
+  color: #ffffff
+  font-size: 2rem
+  text-align: right
+  padding: 0
+  margin: 0
+  margin-right: 80px
+
+ul li
+  list-style: none
+  float: left
+  font-size: 1.2rem 
+  font-family: "Tahoma"
+  font-weight: bold
+  padding: 0.3rem 1rem
+  margin: 0
+  color: #0e4a79
+  background: #e1dede
+  text-transform: uppercase
+  border: 2px solid black
+
+#map
+  height: 70%
+
+section
+  margin-top: 40px
+
+.intro1
+  background: black
+  padding: 6px
+  margin-bottom: 40px
+
+.intro2
+  background: black
+  border: 2px solid #0e4a79
+  color: white 
+  margin: 4px
+  padding: 9px
+  font-size: 0.8rem
+  padding-left: 5px 
+
+
+form
+  margin: 0.5em 0.1em
+
+.mail
+  background: black
+  padding: 6px 
+  margin-bottom: 30px
+
+.mail2
+  border: 2px solid #0e4a79
+  padding: 9px
+  color: white 
+  margin: 4px
+  input[type="text"]
+    width: 200px
+
+.top
+  background: #e1dede
+  color: #0e4a79
+  padding: 5px 10px
+  font-size: 1.1em
+  font-weight: bold
+  text-transform: uppercase
+  text-align: center
+
+.text
+  color: #ffffff
+  font-size: 0.9rem
+  margin: 10px
+
+
+.container
+  margin: 0 auto
+  max-width: 48rem
+  width: 90%
+  &.demo
+    margin-bottom: 10px //DEMO
+
+.container-full-width
+  margin: 0 auto
+  width: 100%
+
+.column
+  &.demo
+    background: #ccc 
+
+@media (min-width: 40rem)
+  .column
+    float: left
+    padding-right: 1rem
+    margin-right: 1rem
+    &.full
+      width: 100%
+    &.two-thirds
+      width: 63.7%
+    &.third
+      width: 31.2%
+    &.half
+      width: 47.5%
+    &.fourth
+      width: 22.5%
+    &.fourth-padded
+      width: 23%
+      margin-right: 2%
+    &.flow-opposite
+      float: right
+      padding-right: 0
+      margin-right: 0
+    img, iframe
+      width: 100%
+      margin-bottom: 1.5rem
